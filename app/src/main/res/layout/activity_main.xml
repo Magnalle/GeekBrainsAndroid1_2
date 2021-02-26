@@ -94,7 +94,6 @@
 
     <TextView
         android:id="@+id/viewResult"
-        style="@style/Buttons"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -104,11 +103,13 @@
         android:backgroundTint="#2D0745"
         android:backgroundTintMode="add"
         android:elegantTextHeight="true"
+        android:gravity="center"
         android:padding="8dp"
         android:text="Result"
-        android:textAlignment="center"
+        android:textColor="#E9E773"
+        android:textAlignment="gravity"
         android:textIsSelectable="true"
-        android:textSize="68sp"
+        android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/guidelineH1"
         app:layout_constraintEnd_toEndOf="parent"
