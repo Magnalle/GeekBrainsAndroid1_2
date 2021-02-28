@@ -38,7 +38,7 @@
         <item name="android:scaleType">fitCenter</item>
     </style>
     <style name="SelectableItemTheme">
-        <item name="android:colorControlHighlight">#99958D42</item>
+        <item name="android:colorControlHighlight">#2B2B2B</item>
     </style>
 
 </resources>
