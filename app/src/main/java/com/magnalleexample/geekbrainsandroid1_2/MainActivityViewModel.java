@@ -58,6 +58,7 @@ public class MainActivityViewModel extends ViewModel {
     private final StringBuilder history = new StringBuilder();
     private double answer = 0.0;
     private double previousOperand = 0.0;
+    private double memory = 0.0;
     private StrType strType = StrType.INPUT;
     private Operation lastOperation = null;
     NumberFormat formatter;
@@ -137,7 +138,10 @@ public class MainActivityViewModel extends ViewModel {
 
     private double getCurrentInput(){
         try {
-            return formatter.parse(inputString.toString()).doubleValue();
+            double value = formatter.parse(inputString.toString()).doubleValue();
+            inputString.delete(0, inputString.length());
+            return value;
+
         } catch (ParseException e) {
             strType = StrType.ERROR;
             return 0;
@@ -209,6 +213,24 @@ public class MainActivityViewModel extends ViewModel {
         setPreviousOperand();
         updateResult();
         history.delete(0, history.length());
+    }
+
+    public void MR(){
+        answer = memory;
+        strType = StrType.ANSWER;
+    }
+    public void MPLUS(){
+        setPreviousOperand();
+        memory += previousOperand;
+    }
+
+    public void MMINUS(){
+        setPreviousOperand();
+        memory -= previousOperand;
+    }
+
+    public void MC(){
+        memory = 0.0;
     }
 
     private void setPreviousOperand(){

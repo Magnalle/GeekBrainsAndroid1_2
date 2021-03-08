@@ -143,6 +143,7 @@
 
         android:orientation="vertical"
         android:text="MC"
+        android:onClick="@{()->viewModel.MC()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@+id/guidelineV1"
@@ -156,6 +157,7 @@
         android:layout_height="0dp"
 
         android:text="MR"
+        android:onClick="@{()->viewModel.MR()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
@@ -170,6 +172,7 @@
 
         android:orientation="vertical"
         android:text="M+"
+        android:onClick="@{()->viewModel.MPLUS()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
@@ -183,6 +186,7 @@
 
         android:orientation="vertical"
         android:text="M-"
+        android:onClick="@{()->viewModel.MMINUS()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
