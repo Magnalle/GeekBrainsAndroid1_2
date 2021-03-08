@@ -89,7 +89,7 @@ public class MainActivityViewModel extends ViewModel {
         if(strType != StrType.INPUT){
             setPreviousOperand();
             inputString.delete(0, inputString.length());
-            strType = strType.INPUT;
+            strType = StrType.INPUT;
         }
         inputString.append(symbol);
         updateResult();
@@ -139,7 +139,6 @@ public class MainActivityViewModel extends ViewModel {
     private double getCurrentInput(){
         try {
             double value = formatter.parse(inputString.toString()).doubleValue();
-            inputString.delete(0, inputString.length());
             return value;
 
         } catch (ParseException e) {
