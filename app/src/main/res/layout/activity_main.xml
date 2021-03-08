@@ -135,14 +135,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewHistory" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMC"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="MC"
+        android:text="@string/mc"
         android:onClick="@{()->viewModel.MC()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -150,13 +147,10 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH1" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMR"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:text="MR"
+        android:text="@string/mr"
         android:onClick="@{()->viewModel.MR()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
@@ -164,111 +158,80 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH1"
         app:strokeColor="#E9E773" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMPLUS"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="M+"
+        android:text="@string/mPlus"
         android:onClick="@{()->viewModel.MPLUS()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMMINUS"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="M-"
+        android:text="@string/mMinus"
         android:onClick="@{()->viewModel.MMINUS()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH2"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH1" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSqr"
         style="@style/ImageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:src="@drawable/ic_sqr"
-        android:orientation="vertical"
+        android:drawableLeft="@drawable/ic_sqr"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@+id/guidelineV1"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH3" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSqrt"
         style="@style/ImageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:focusableInTouchMode="false"
-        android:orientation="vertical"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_sqrt"
+        android:drawableLeft="@drawable/ic_sqrt"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH4"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH3" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button1div"
         style="@style/ImageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:src="@drawable/ic_div"
+        android:drawableLeft="@drawable/ic_div"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH4"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH3" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPlus"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:orientation="vertical"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH4"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMinus"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="-"
-        app:iconTint="#FFFFFF"
+        android:text="@string/minus"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH5"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH4" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:orientation="vertical"
-        android:text="1"
+        android:text="@string/_1"
         android:onClick="@{() -> viewModel.inputNumber('1')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH6"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -276,55 +239,41 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH5" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:orientation="vertical"
-        android:text="2"
+        android:text="@string/_2"
         android:onClick="@{() -> viewModel.inputNumber('2')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH6"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:orientation="vertical"
-        android:text="3"
+        android:text="@string/_3"
         android:onClick="@{() -> viewModel.inputNumber('3')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH6"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMUL"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="*"
+        android:text="@string/multiply"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH6"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="4"
+        android:text="@string/_4"
         android:onClick="@{() -> viewModel.inputNumber('4')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH7"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -332,55 +281,43 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH6" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="5"
+        android:text="@string/_5"
         android:onClick="@{() -> viewModel.inputNumber('5')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH7"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="6"
+        android:text="@string/_6"
         android:onClick="@{() -> viewModel.inputNumber('6')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH7"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonDIV"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="/"
+        android:text="@string/divide"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH7"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="7"
+        android:text="@string/_7"
         android:onClick="@{() -> viewModel.inputNumber('7')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH8"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -388,42 +325,33 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH7" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="8"
+        android:text="@string/_8"
         android:onClick="@{() -> viewModel.inputNumber('8')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH8"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH7" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button9"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="9"
+        android:text="@string/_9"
         android:onClick="@{() -> viewModel.inputNumber('9')}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH8"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH7" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonRESULT"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="="
+        android:text="@string/equals"
         android:onClick="@{() -> viewModel.equals()}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
@@ -432,28 +360,22 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH7"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button0"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text="0"
+        android:text="@string/_0"
         android:onClick="@{() -> viewModel.inputNumber('0')}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@+id/guidelineV2"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH8" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPOINT"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
         android:orientation="vertical"
-        android:text=","
+        android:text="@string/divider"
         android:onClick="@{() -> viewModel.inputNumber(',')}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -462,27 +384,19 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineH8"
         app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonERASE"
         style="@style/ImageButton"
-        android:layout_width="0dp"
-
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:src="@drawable/ic_erase"
+        android:drawableLeft="@drawable/ic_erase"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH3"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV2"
         app:layout_constraintRight_toRightOf="@+id/guidelineV3"
         app:layout_constraintTop_toBottomOf="@+id/guidelineH2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCE"
         style="@style/Buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:orientation="vertical"
-        android:text="CE"
+        android:text="@string/ce"
         android:onClick="@{() -> viewModel.clearInput()}"
         app:layout_constraintBottom_toBottomOf="@+id/guidelineH3"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineV3"

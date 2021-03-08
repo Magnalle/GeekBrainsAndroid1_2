@@ -2,6 +2,8 @@
 <resources>
 
     <style name="Buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
         <item name="android:backgroundTint">#2D0745</item>
         <item name="android:elegantTextHeight">true</item>
@@ -22,10 +24,13 @@
     </style>
 
     <style name="ImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:theme">@style/SelectableItemTheme</item>
         <item name="android:backgroundTint">#2D0745</item>
         <item name="android:tint">#E9E773</item>
+        <item name="android:drawableTint">#E9E773</item>
         <item name="android:padding">0dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:paddingLeft">0dp</item>
