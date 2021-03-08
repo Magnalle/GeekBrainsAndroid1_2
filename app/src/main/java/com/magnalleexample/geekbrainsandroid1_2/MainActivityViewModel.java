@@ -172,7 +172,9 @@ public class MainActivityViewModel extends ViewModel {
     public void binaryOperation(Operation operation){
         if(lastOperation != null)
             calculate(false);
-        else {
+        else if(strType == StrType.ANSWER) {
+            history.append(getCurrentString());
+        }else {
             strType = StrType.NEW_INPUT;
             history.append(getCurrentInput());
         }
@@ -189,6 +191,7 @@ public class MainActivityViewModel extends ViewModel {
         lastOperation = operation;
         writeHistory(operation, previousOperand);
         calculate(true);
+        lastOperation = null;
         updateResult();
     }
 
